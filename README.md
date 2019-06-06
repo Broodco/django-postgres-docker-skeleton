@@ -6,7 +6,9 @@
 
 2. Create a new Django project using _django-admin startproject NAME_.
 
-3. Into the project, find the _settings.py_ file and replaces the _DATABASES_ config by this one (or another, depending on your env) : 
+3. Create the _requirements.txt_ file a the root of your project to let pip install your dependencies when running the image.
+
+4. Into the project, find the _settings.py_ file and replaces the _DATABASES_ config by this one (or another, depending on your env) : 
 
 ~~~~
 DATABASES = {
@@ -20,12 +22,12 @@ DATABASES = {
 }
 ~~~~
 
-4. To deploy your server (to port 8000 with this config), just the command :
+5. To deploy your server (to port 8000 with this config), just the command :
 ~~~
 docker-compose up
 ~~~
 
-5. To stop the server, just run :
+6. To stop the server, just run :
 ~~~
 docker-compose down
 ~~~
