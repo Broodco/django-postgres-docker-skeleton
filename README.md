@@ -22,12 +22,14 @@ DATABASES = {
 }
 ~~~~
 
-5. To deploy your server (to port 8000 with this config), just the command :
+5. Make sure _root_ has executions privileges on your _.sh_ files.
+
+6. To deploy your server (to port 8000 with this config), just the command :
 ~~~
-docker-compose up
+docker-compose up -d --build
 ~~~
 
-6. To stop the server, just run :
+7. To stop the server, just run :
 ~~~
 docker-compose down
 ~~~
